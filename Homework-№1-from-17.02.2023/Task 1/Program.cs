@@ -1,20 +1,21 @@
-﻿using System;
-using System.Globalization;
-using System.Xml.Linq;
+using System;
 
 namespace hw1t1
 {
+    /// <summary>
+    /// Internal class Program.
+    /// </summary>
     internal class Program
     {
-        public static void InsertionSort(int[] array, int ArrayLength)
+        public static void InsertionSort(int[] array, int arrayLength)
         {
             int temp = 0;
             int j = 0;
-            for (int i = 1; i < ArrayLength; i++)
+            for (int i = 1; i < arrayLength; i++)
             {
                 temp = array[i];
                 j = i - 1;
-                while ((j >= 0) && (array[j] > temp))
+                while (j >= 0 && array[j] > temp)
                 {
                     array[j + 1] = array[j];
                     j--;
@@ -22,10 +23,10 @@ namespace hw1t1
                 array[j + 1] = temp;
             }
         }
-        public static void PrintArray(int[] array, int ArrayLength)
+        public static void PrintArray(int[] array, int arrayLength)
         {
-            string TempString = null;
-            for (int i = 0; i < ArrayLength; ++i)
+            var TempString = "";
+            for (int i = 0; i < arrayLength; ++i)
             {
                 TempString = array[i].ToString() + " ";
                 Console.Write(TempString);
@@ -37,22 +38,21 @@ namespace hw1t1
             Console.WriteLine("number and then n integer numbers - the numbers of array.");
             Console.WriteLine("I will print on your screen sorted array.");
             int n = 0;
-            bool CorrectInput = int.TryParse(Console.ReadLine(), out n);
-            while (!CorrectInput)
+            bool correctInput = int.TryParse(Console.ReadLine(), out n);
+            while (!correctInput)
             {
                 Console.WriteLine("Incorrect enter! Please, try again!");
-                CorrectInput = int.TryParse(Console.ReadLine(), out n);
+                correctInput = int.TryParse(Console.ReadLine(), out n);
             }
-            int[] array = new int[n];
-            string HelpString = "Now, please, enter the " + n.ToString() + " elements of your array";
-            Console.WriteLine(HelpString);
+            var array = new int[n];
+            Console.WriteLine("Now, please, enter the {0} elements of your array", n.ToString());
             for (int i = 0; i < n; ++i)
             {
-                CorrectInput = int.TryParse(Console.ReadLine(), out array[i]);
-                while (!CorrectInput)
+                correctInput = int.TryParse(Console.ReadLine(), out array[i]);
+                while (!correctInput)
                 {
                     Console.WriteLine("Incorrect enter! Please, try again!");
-                    CorrectInput = int.TryParse(Console.ReadLine(), out array[i]);
+                    correctInput = int.TryParse(Console.ReadLine(), out array[i]);
                 }
             }
             InsertionSort(array, n);
