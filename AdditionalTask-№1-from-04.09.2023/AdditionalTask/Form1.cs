@@ -80,7 +80,7 @@ namespace ProgressBarTask
         }
 
         //startButtonClick
-        private void button1_Click(object sender, EventArgs e)
+        private void startButtonClick(object sender, EventArgs e)
         {
             StartButton.Enabled = false;
             StartButton.Text = "Installing...";
@@ -111,7 +111,7 @@ namespace ProgressBarTask
         }
 
         //closeButtonClick
-        private void button1_Click_1(object sender, EventArgs e)
+        private void closeButtonClick(object sender, EventArgs e)
         {
             Close();
         }
