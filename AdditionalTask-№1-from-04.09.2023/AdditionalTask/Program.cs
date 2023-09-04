@@ -1,4 +1,4 @@
-namespace AdditionalTask
+namespace progressBarTask
 {
     internal static class Program
     {

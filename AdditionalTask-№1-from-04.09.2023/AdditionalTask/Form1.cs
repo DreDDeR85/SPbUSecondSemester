@@ -1,109 +1,112 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-namespace ProgressBarTask
+namespace progressBarTask
 {
     public partial class Form1 : Form
     {
-        private Button startButton;
-        private Label veryImportantLabel;
-        private ProgressBar progressBar;
-        private Button closeButton;
-        private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Button _startButton;
+        private System.Windows.Forms.Label _veryImportantLabel;
+        private System.Windows.Forms.ProgressBar _progressBar;
+        private System.Windows.Forms.Button _closeButton;
+        private System.Windows.Forms.Timer _timer;
 
         public Form1()
         {
             InitializeComponent();
-            closeButton.Visible = false;
+            _closeButton.Visible = false;
         }
 
         private void InitializeComponent()
         {
-            this.startButton = new Button();
-            this.veryImportantLabel = new Label();
-            this.progressBar = new ProgressBar();
-            this.closeButton = new Button();
-            this.timer = new System.Windows.Forms.Timer();
-            this.SuspendLayout();
+            _startButton = new System.Windows.Forms.Button();
+            _veryImportantLabel = new System.Windows.Forms.Label();
+            _progressBar = new System.Windows.Forms.ProgressBar();
+            _closeButton = new System.Windows.Forms.Button();
+            _timer = new System.Windows.Forms.Timer();
+            SuspendLayout();
 
-            // startButton
-            this.startButton.BackColor = SystemColors.MenuBar;
-            this.startButton.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            this.startButton.Location = new Point(302, 139);
-            this.startButton.Name = "startButton";
-            this.startButton.Size = new Size(168, 55);
-            this.startButton.TabIndex = 0;
-            this.startButton.Text = "Install";
-            this.startButton.UseVisualStyleBackColor = false;
-            this.startButton.Click += new EventHandler(this.startButton_Click);
+            // _startButton
+            _startButton.BackColor = SystemColors.MenuBar;
+            _startButton.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            _startButton.Location = new Point(302, 139);
+            _startButton.Name = "_startButton";
+            _startButton.Size = new Size(168, 55);
+            _startButton.TabIndex = 0;
+            _startButton.Text = "Install";
+            _startButton.UseVisualStyleBackColor = false;
+            _startButton.Click += new EventHandler(_startButton_Click);
 
-            // veryImportantLabel
-            this.veryImportantLabel.AutoSize = true;
-            this.veryImportantLabel.BackColor = Color.LightGreen;
-            this.veryImportantLabel.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            this.veryImportantLabel.Location = new Point(135, 59);
-            this.veryImportantLabel.Name = "veryImportantLabel";
-            this.veryImportantLabel.Size = new Size(505, 54);
-            this.veryImportantLabel.TabIndex = 1;
-            this.veryImportantLabel.Text = "Install the Amigo browser?";
+            // _veryImportantLabel
+            _veryImportantLabel.AutoSize = true;
+            _veryImportantLabel.BackColor = Color.LightGreen;
+            _veryImportantLabel.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            _veryImportantLabel.Location = new Point(135, 59);
+            _veryImportantLabel.Name = "_veryImportantLabel";
+            _veryImportantLabel.Size = new Size(505, 54);
+            _veryImportantLabel.TabIndex = 1;
+            _veryImportantLabel.Text = "Install the Amigo browser?";
 
-            // progressBar
-            this.progressBar.Location = new Point(106, 255);
-            this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new Size(569, 29);
-            this.progressBar.TabIndex = 2;
+            // _progressBar
+            _progressBar.Location = new Point(106, 255);
+            _progressBar.Name = "_progressBar";
+            _progressBar.Size = new Size(569, 29);
+            _progressBar.TabIndex = 2;
 
-            // closeButton
-            this.closeButton.BackColor = SystemColors.MenuBar;
-            this.closeButton.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            this.closeButton.Location = new Point(315, 344);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new Size(139, 55);
-            this.closeButton.TabIndex = 3;
-            this.closeButton.Text = "Close";
-            this.closeButton.UseVisualStyleBackColor = false;
-            this.closeButton.Click += new EventHandler(this.closeButton_Click);
+            // _closeButton
+            _closeButton.BackColor = SystemColors.MenuBar;
+            _closeButton.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            _closeButton.Location = new Point(315, 344);
+            _closeButton.Name = "_closeButton";
+            _closeButton.Size = new Size(139, 55);
+            _closeButton.TabIndex = 3;
+            _closeButton.Text = "Close";
+            _closeButton.UseVisualStyleBackColor = false;
+            _closeButton.Click += new EventHandler(_closeButton_Click);
 
-            // timer
-            this.timer.Interval = 100;
-            this.timer.Tick += new EventHandler(this.timer_Tick);
+            // _timer
+            _timer.Interval = 100;
+            _timer.Tick += new EventHandler(timer_Tick);
 
             // Form1
-            this.AutoScaleDimensions = new SizeF(8F, 20F);
-            this.AutoScaleMode = AutoScaleMode.Font;
-            this.ClientSize = new Size(800, 450);
-            this.Controls.Add(this.closeButton);
-            this.Controls.Add(this.progressBar);
-            this.Controls.Add(this.veryImportantLabel);
-            this.Controls.Add(this.startButton);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(_closeButton);
+            Controls.Add(_progressBar);
+            Controls.Add(_veryImportantLabel);
+            Controls.Add(_startButton);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
-        private void startButton_Click(object sender, EventArgs e)
+        private void _startButton_Click(object sender, EventArgs e)
         {
-            startButton.Enabled = false;
-            startButton.Text = "Installing...";
-            progressBar.Value = 0;
-            timer.Start();
+            _startButton.Enabled = false;
+            _startButton.Text = "Installing...";
+            _progressBar.Value = 0;
+            _timer.Start();
         }
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            progressBar.Value += 2;
-            if (progressBar.Value >= 100)
+            _progressBar.Value += 2;
+            if (_progressBar.Value >= 100)
             {
-                timer.Stop();
-                closeButton.Visible = true;
-                startButton.Text = "Completed!";
+                _timer.Stop();
+                _closeButton.Visible = true;
+                _startButton.Text = "Completed!";
             }
         }
 
-        private void closeButton_Click(object sender, EventArgs e)
+        private void _closeButton_Click(object sender, EventArgs e)
         {
             Close();
         }
+
+
     }
 }
