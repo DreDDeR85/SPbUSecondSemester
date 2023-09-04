@@ -1,0 +1,16 @@
+C:\Users\botay\VS. Coooodes\AdditionalTask\AdditionalTask\obj\Debug\net7.0-windows\AdditionalTask.Form1.resources
+C:\Users\botay\VS. Coooodes\AdditionalTask\AdditionalTask\obj\Debug\net7.0-windows\AdditionalTask.csproj.GenerateResource.cache
+C:\Users\botay\VS. Coooodes\AdditionalTask\AdditionalTask\obj\Debug\net7.0-windows\AdditionalTask.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\botay\VS. Coooodes\AdditionalTask\AdditionalTask\obj\Debug\net7.0-windows\AdditionalTask.AssemblyInfoInputs.cache
+C:\Users\botay\VS. Coooodes\AdditionalTask\AdditionalTask\obj\Debug\net7.0-windows\AdditionalTask.AssemblyInfo.cs
+C:\Users\botay\VS. Coooodes\AdditionalTask\AdditionalTask\obj\Debug\net7.0-windows\AdditionalTask.csproj.CoreCompileInputs.cache
+C:\Users\botay\VS. Coooodes\AdditionalTask\AdditionalTask\bin\Debug\net7.0-windows\AdditionalTask.exe
+C:\Users\botay\VS. Coooodes\AdditionalTask\AdditionalTask\bin\Debug\net7.0-windows\AdditionalTask.deps.json
+C:\Users\botay\VS. Coooodes\AdditionalTask\AdditionalTask\bin\Debug\net7.0-windows\AdditionalTask.runtimeconfig.json
+C:\Users\botay\VS. Coooodes\AdditionalTask\AdditionalTask\bin\Debug\net7.0-windows\AdditionalTask.dll
+C:\Users\botay\VS. Coooodes\AdditionalTask\AdditionalTask\bin\Debug\net7.0-windows\AdditionalTask.pdb
+C:\Users\botay\VS. Coooodes\AdditionalTask\AdditionalTask\obj\Debug\net7.0-windows\AdditionalTask.dll
+C:\Users\botay\VS. Coooodes\AdditionalTask\AdditionalTask\obj\Debug\net7.0-windows\refint\AdditionalTask.dll
+C:\Users\botay\VS. Coooodes\AdditionalTask\AdditionalTask\obj\Debug\net7.0-windows\AdditionalTask.pdb
+C:\Users\botay\VS. Coooodes\AdditionalTask\AdditionalTask\obj\Debug\net7.0-windows\AdditionalTask.genruntimeconfig.cache
+C:\Users\botay\VS. Coooodes\AdditionalTask\AdditionalTask\obj\Debug\net7.0-windows\ref\AdditionalTask.dll
