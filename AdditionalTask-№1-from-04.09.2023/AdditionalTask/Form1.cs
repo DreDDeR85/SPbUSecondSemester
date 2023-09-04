@@ -27,7 +27,7 @@ namespace ProgressBarTask
             StartButton.TabIndex = 0;
             StartButton.Text = "Install";
             StartButton.UseVisualStyleBackColor = false;
-            StartButton.Click += button1_Click;
+            StartButton.Click += startButtonClick;
             // 
             // veryImportantLabel
             // 
@@ -57,7 +57,7 @@ namespace ProgressBarTask
             closeButton.TabIndex = 3;
             closeButton.Text = "Close";
             closeButton.UseVisualStyleBackColor = false;
-            closeButton.Click += button1_Click_1;
+            closeButton.Click += closeButtonClick;
             // 
             // Form1
             // 
