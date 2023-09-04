@@ -21,7 +21,7 @@ jobs:
           dotnet-version: "7.x"
       - name: Build
         shell: bash
-        run: for f in $(find . -name "*.sln"); do dotnet build $f; done
+        run: for f in $(find . -name "*.sln"); do dotnet build $f; done; uname -a
       - name: Run tests
         shell: bash
         run: for f in $(find . -name "*.sln"); do dotnet test $f; done
