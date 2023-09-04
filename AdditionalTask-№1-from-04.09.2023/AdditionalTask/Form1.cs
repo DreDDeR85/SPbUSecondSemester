@@ -79,7 +79,6 @@ namespace ProgressBarTask
             closeButton.Visible = false;
         }
 
-        //startButtonClick
         private void startButtonClick(object sender, EventArgs e)
         {
             StartButton.Enabled = false;
@@ -110,7 +109,6 @@ namespace ProgressBarTask
             thread.Start();
         }
 
-        //closeButtonClick
         private void closeButtonClick(object sender, EventArgs e)
         {
             Close();
