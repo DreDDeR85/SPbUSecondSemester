@@ -1,5 +1,24 @@
 name: Build
-on: [push]
+
+on:
+  push:
+    paths-ignore:
+      - 'bin/**'
+      - 'obj/**'
+      - '*xml'
+      - '.vs/**'
+      - '.github/workflows/**'
+      - 'README.md'
+      - 'Tests/**'
+  pull_request:
+    paths-ignore:
+      - 'bin/**'
+      - 'obj/**'
+      - '*xml'
+      - '.vs/**'
+      - '.github/workflows/**'
+      - 'Tests/**'
+      
 jobs:
   build-Ubuntu:
     runs-on: ubuntu-latest
@@ -12,6 +31,7 @@ jobs:
         run: for f in $(find . -name "*.sln"); do dotnet build $f; done
       - name: Run tests
         run: for f in $(find . -name "*.sln"); do dotnet test $f; done
+        
   build-Windows:
     runs-on: windows-latest
     steps:
