@@ -1,0 +1,14 @@
+C:\Dimkan\Vibibi Stulili\BWT\BWT\bin\Debug\net7.0\BWT.exe
+C:\Dimkan\Vibibi Stulili\BWT\BWT\bin\Debug\net7.0\BWT.deps.json
+C:\Dimkan\Vibibi Stulili\BWT\BWT\bin\Debug\net7.0\BWT.runtimeconfig.json
+C:\Dimkan\Vibibi Stulili\BWT\BWT\bin\Debug\net7.0\BWT.dll
+C:\Dimkan\Vibibi Stulili\BWT\BWT\bin\Debug\net7.0\BWT.pdb
+C:\Dimkan\Vibibi Stulili\BWT\BWT\obj\Debug\net7.0\BWT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dimkan\Vibibi Stulili\BWT\BWT\obj\Debug\net7.0\BWT.AssemblyInfoInputs.cache
+C:\Dimkan\Vibibi Stulili\BWT\BWT\obj\Debug\net7.0\BWT.AssemblyInfo.cs
+C:\Dimkan\Vibibi Stulili\BWT\BWT\obj\Debug\net7.0\BWT.csproj.CoreCompileInputs.cache
+C:\Dimkan\Vibibi Stulili\BWT\BWT\obj\Debug\net7.0\BWT.dll
+C:\Dimkan\Vibibi Stulili\BWT\BWT\obj\Debug\net7.0\refint\BWT.dll
+C:\Dimkan\Vibibi Stulili\BWT\BWT\obj\Debug\net7.0\BWT.pdb
+C:\Dimkan\Vibibi Stulili\BWT\BWT\obj\Debug\net7.0\BWT.genruntimeconfig.cache
+C:\Dimkan\Vibibi Stulili\BWT\BWT\obj\Debug\net7.0\ref\BWT.dll
