@@ -29,6 +29,35 @@ while (isContinue)
 
             WriteLine(trie.Add(str) ? "String added successfully!" : "This string is already in Trie.");
             break;
+
+        case 2:
+            Write("Enter a string: ");
+            str = ReadLine();
+
+            WriteLine(trie.Remove(str) ? "String removed successfully!" : "This string is not in Trie.");
+            break;
+
+        case 3:
+            Write("Enter a string: ");
+            str = ReadLine();
+
+            WriteLine(trie.Contains(str) ? "Yes, this string is in Trie!" : "No. this string isn't in Trie.");
+            break;
+
+        case 4:
+            WriteLine($"Number of strings: {trie.Size}");
+            break;
+
+        case 5:
+            Write("Enter a prefix: ");
+            str = ReadLine();
+
+            WriteLine($"Number of lines which starts with \"{str}\": {trie.HowManyWordsWithPrefix(str)}");
+            break;
+
+        case 6:
+            Trie.Trie.PrintActions();
+            break;
     }
 
 }
