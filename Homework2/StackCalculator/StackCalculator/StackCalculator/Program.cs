@@ -1,4 +1,7 @@
 ﻿using StackCalculator;
+using System.Globalization;
+
+CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
 
 Console.WriteLine("I am a stack calculator.\nGive me an expression" +
     "written in reverse Polish notation, and I will calculate him.");
