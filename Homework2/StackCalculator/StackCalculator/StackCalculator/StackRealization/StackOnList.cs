@@ -7,13 +7,13 @@ public class StackOnList : IStack
 {
     public StackOnList()
     {
-        stack = new LinkedList<int>();
+        stack = new LinkedList<double>();
     }
 
-    private LinkedList<int> stack;
+    private LinkedList<double> stack;
 
     /// <inheritdoc/>
-    public void Push(int value)
+    public void Push(double value)
     {
         stack.AddFirst(value);
     }
@@ -25,14 +25,14 @@ public class StackOnList : IStack
     }
 
     /// <inheritdoc/>
-    public int Pop()
+    public double Pop()
     {
         if (IsEmpty())
         {
             throw new InvalidOperationException("Cannot pop element from empty stack.");
         }
 
-        int result = stack.First();
+        double result = stack.First();
         stack.RemoveFirst();
 
         return result;

@@ -9,7 +9,7 @@ public interface IStack
     /// Add element in stack.
     /// </summary>
     /// <param name="value"> Value to add.</param>
-    public void Push(int value);
+    public void Push(double value);
 
 
     /// <summary>
@@ -17,7 +17,7 @@ public interface IStack
     /// </summary>
     /// <returns> Top element from the stack.</returns>
     /// <exception cref="InvalidOperationException"> Not be able to pop an element from empty stack.</exception>
-    public int Pop();
+    public double Pop();
 
 
     /// <summary>

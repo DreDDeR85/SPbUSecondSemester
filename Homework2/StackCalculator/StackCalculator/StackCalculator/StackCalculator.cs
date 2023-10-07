@@ -12,15 +12,15 @@ public class StackCalculator
 
     private readonly IStack _stack;
 
-    private static bool IsZero(int number)
+    private static bool IsZero(double number)
     {
         return Math.Abs(number) < 0.0001;
     }
 
     private void Operations(string sign)
     {
-        int firstElement = 0;
-        int secondElement = 0;
+        double firstElement = 0;
+        double secondElement = 0;
 
         try
         {
@@ -64,7 +64,7 @@ public class StackCalculator
     /// <returns> Result of the expression. </returns>
     /// <exception cref="ArgumentNullException"></exception>
     /// <exception cref="ArgumentException"></exception>
-    public int CalculateExpression(string? expression)
+    public double CalculateExpression(string? expression)
     {
         if (expression == null)
         {
@@ -85,8 +85,8 @@ public class StackCalculator
             }
             else
             {
-                int number = 0;
-                if (!int.TryParse(element, out number))
+                double number = 0;
+                if (!double.TryParse(element, out number))
                 {
                     throw new ArgumentException("Incorrect expression.");
                 }
@@ -94,7 +94,7 @@ public class StackCalculator
             }
         }
 
-        int result = 0;
+        double result = 0;
         try
         {
             result = _stack.Pop();

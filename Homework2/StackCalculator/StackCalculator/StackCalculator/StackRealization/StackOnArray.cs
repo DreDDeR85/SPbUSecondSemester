@@ -8,13 +8,13 @@ public class StackOnArray : IStack
 {
     public StackOnArray()
     {
-        stack = new List<int>();
+        stack = new List<double>();
     }
 
-    private List<int> stack;
+    private List<double> stack;
 
     /// <inheritdoc/>
-    public void Push(int value)
+    public void Push(double value)
     {
         stack.Add(value);
     }
@@ -26,7 +26,7 @@ public class StackOnArray : IStack
     }
 
     /// <inheritdoc/>
-    public int Pop()
+    public double Pop()
     {
         if (IsEmpty())
         {
