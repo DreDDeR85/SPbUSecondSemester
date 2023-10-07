@@ -3,7 +3,7 @@
 /// <summary>
 /// Data structure, which is a suspended tree with symbols on the edges, Trie.
 /// </summary>
-internal class Trie
+public class Trie
 {
     /// <summary>
     /// Initializes a new instance of the class.
