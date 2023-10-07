@@ -179,7 +179,7 @@ internal class Trie
     /// <summary>
     /// Method to print on user's screen a list of the actions.
     /// </summary>
-    public void PrintActions()
+    public static void PrintActions()
     {
         Console.WriteLine("""
             Read below what can I do:
