@@ -24,7 +24,7 @@ public class StackCalculatorTests
     [TestCaseSource(nameof(Stacks))]
     public void CalculateExpression_FractionalNumbers_ExceptionReturned(StackCalculator stackCalculator)
     {
-        var expression = "7,5 3,8 + 2,1 *";
+        var expression = "7.5 3.8 + 2.1 *";
 
         Assert.Throws<ArgumentException>(() => stackCalculator.CalculateExpression(expression));
     }
