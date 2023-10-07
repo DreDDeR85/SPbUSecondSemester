@@ -35,15 +35,15 @@ public class StackCalculator
         switch (sign)
         {
             case "+":
-                _stack.Push(firstElement + secondElement);
+                _stack.Push(secondElement + firstElement);
                 break;
 
             case "-":
-                _stack.Push(firstElement - secondElement);
+                _stack.Push(secondElement - firstElement);
                 break;
 
             case "*":
-                _stack.Push(firstElement * secondElement);
+                _stack.Push(secondElement * firstElement);
                 break;
 
             case "/":
@@ -52,7 +52,7 @@ public class StackCalculator
                     throw new DivideByZeroException();
                 }
 
-                _stack.Push(firstElement / secondElement);
+                _stack.Push(secondElement / firstElement);
                 break;
         }
     }
