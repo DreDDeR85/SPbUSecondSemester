@@ -49,6 +49,12 @@ internal class Trie
         public bool IsTerminal { get; set; }
     }
 
+    /// <summary>
+    /// Method to check if a string exists in a Trie.
+    /// </summary>
+    /// <param name="element"> String value. </param>
+    /// <returns> True - this string is in Trie, False - this string isn't in Trie. </returns>
+    /// <exception cref="ArgumentNullException"> String can't be null. </exception>
     public bool Contains(string? element)
     {
         if (element is null)
@@ -69,6 +75,13 @@ internal class Trie
 
         return currentNode.IsTerminal;
     }
+
+    /// <summary>
+    /// Method for adding a string to Trie.
+    /// </summary>
+    /// <param name="element"> String to add. </param>
+    /// <returns> True - string added successfully, False - this string is already in Trie. </returns>
+    /// <exception cref="ArgumentNullException"> String can't be null. </exception>
     public bool Add(string? element)
     {
         if (element is null)
@@ -98,6 +111,12 @@ internal class Trie
         return currentNode.IsTerminal = true;
     }
 
+    /// <summary>
+    /// Method for removing a string from a Trie.
+    /// </summary>
+    /// <param name="element"> String value. </param>
+    /// <returns> True - the string was successfully deleted, False - the given string isn't in Trie.</returns>
+    /// <exception cref="ArgumentNullException"> String can't be null. </exception>
     public bool Remove(string? element)
     {
         if (element is null)
@@ -131,6 +150,12 @@ internal class Trie
         return true;
     }
 
+    /// <summary>
+    /// Method to get to know how many words starts with this prefix.
+    /// </summary>
+    /// <param name="prefix"> Prefix entered value. </param>
+    /// <returns> Number of words which starts with this prefix. </returns>
+    /// <exception cref="ArgumentNullException"> Prefix can't be null. </exception>
     public int HowManyWordsWithPrefix(string? prefix)
     {
         if (prefix is null)
@@ -149,5 +174,24 @@ internal class Trie
         }
 
         return currentNode.NumberWordsWithSamePrefix;
+    }
+
+    /// <summary>
+    /// Method to print on user's screen a list of the actions.
+    /// </summary>
+    public void PrintActions()
+    {
+        Console.WriteLine("""
+            Read below what can I do:
+
+            0 - Exit
+            1 - Add an element
+            2 - Remove an element
+            3 - Check if the element contains in Trie
+            4 - Get number of strings (words)
+            5 - Get number of elements with prefix
+            6 - Get this list of commands again
+
+            """);
     }
 }
