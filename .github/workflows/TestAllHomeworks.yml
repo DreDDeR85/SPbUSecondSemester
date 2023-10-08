@@ -18,6 +18,7 @@ on:
       - '.vs/**'
       - '.github/workflows/**'
       - 'Tests/**'
+  workflow_dispatch:
       
 jobs:
   build-Ubuntu:
