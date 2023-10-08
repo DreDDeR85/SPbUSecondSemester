@@ -85,8 +85,8 @@ public class StackCalculator
             }
             else
             {
-                double number = 0;
-                if (!double.TryParse(element, out number))
+                int number = 0;
+                if (!int.TryParse(element, out number))
                 {
                     throw new ArgumentException("Incorrect expression.");
                 }
