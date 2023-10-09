@@ -147,5 +147,5 @@ public static class ConfigurationGenerator
         return configuration.ToString();
     }
     private static bool IsCorrectLine(string line)
-        => Regex.IsMatch(line, @"^\d+: (\d+ \(\d+\),? ?)+$");
+        => Regex.IsMatch(line, @"\d+: (\d+ \(\d+\),? ?)+");
 }
